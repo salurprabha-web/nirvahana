@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { NextSeo } from 'next-seo'
+
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
 
@@ -59,19 +59,7 @@ export default function Contact() {
   }
 
   return (
-    <>
-      <NextSeo
-        title="Contact Us - Nirvahana Utsav | Get Free Event Planning Consultation"
-        description="Contact Nirvahana Utsav for professional event management services. Get a free consultation for your wedding, corporate event, or celebration. Call +91 98765 43210."
-        canonical="https://nirvahana-utsav.com/contact"
-        openGraph={{
-          url: 'https://nirvahana-utsav.com/contact',
-          title: 'Contact Us - Nirvahana Utsav',
-          description: 'Get in touch for professional event management services and free consultation.',
-        }}
-      />
-      
-      <div className="min-h-screen">
+    <div className="min-h-screen">
         {/* Hero Section */}
         <section className="bg-royal-blue text-white section-padding">
           <div className="container-custom text-center">
@@ -306,6 +294,5 @@ export default function Contact() {
           </div>
         </section>
       </div>
-    </>
   )
 }
